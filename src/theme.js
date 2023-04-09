@@ -1,9 +1,8 @@
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material/styles";
-import { daDK } from "@mui/x-data-grid";
 
 //  color design tokens
-export const token = (mode) => ({
+export const tokens = (mode) => ({
   ...(mode === "dark"
     ? {
         grey: {
