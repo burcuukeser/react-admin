@@ -26,7 +26,7 @@ const userSchema = yup.object().shape({
         .required("required"),
     address1: yup.string().required("required"),
     address2: yup.string().required("required"),
-})
+});
 
 const Form = () => {
     const isNonMobile = useMediaQuery("(min-width: 600px)");
@@ -141,7 +141,9 @@ const Form = () => {
                 )}
             </Formik>
         </Box>
-    )
-}
+    );
+};
+
+
 
 export default Form;
